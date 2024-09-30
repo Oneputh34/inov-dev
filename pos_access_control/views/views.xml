@@ -1,0 +1,14 @@
+<odoo>
+    <record id="view_pos_order_tree" model="ir.ui.view">
+        <field name="name">pos.order.tree.access.control</field>
+        <field name="model">pos.order</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name" invisible="1"/> <!-- Masquer le champ -->
+                <field name="amount_total" invisible="1"/> <!-- Masquer le champ -->
+                <field name="state" invisible="1"/> <!-- Masquer le champ -->
+                <!-- Vous pouvez ajouter d'autres champs ici -->
+            </tree>
+        </field>
+    </record>
+</odoo>
